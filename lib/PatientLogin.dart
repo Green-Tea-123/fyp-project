@@ -11,7 +11,7 @@ class NurseLogin extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Login: Nurse"),
+            Text("Login: Patient"),
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
