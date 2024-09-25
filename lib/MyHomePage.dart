@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'MyAppState.dart';
 import 'NurseLogin.dart';
+import 'PatientLogin.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -32,7 +33,7 @@ class MyHomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context, 
-                    MaterialPageRoute(builder: (context) => NurseLogin()));
+                    MaterialPageRoute(builder: (context) => const NurseLogin()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 8, top: 8, left: 50, right: 50),
@@ -44,7 +45,9 @@ class MyHomePage extends StatelessWidget {
               padding: EdgeInsets.all(5),
             child: ElevatedButton(
                 onPressed: () {
-                  print('button pressed!');
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => PatientLogin()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 8, top: 8, left: 50, right: 50),

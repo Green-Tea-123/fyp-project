@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'MyHomePage.dart';
 
 class NurseLogin extends StatelessWidget {
+  const NurseLogin({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
